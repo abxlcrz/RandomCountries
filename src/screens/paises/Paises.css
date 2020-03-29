@@ -1,0 +1,9 @@
+.aboutContainer {
+    padding: 50px;
+}
+
+.vsText{
+    text-align: right;
+    display: block;
+    color: blue;
+}
