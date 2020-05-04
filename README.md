@@ -1,6 +1,9 @@
 ## Description
 This project is a REST API that consumes the RestCountries API, basically get random countries through a raffle.
 
+## Deployment
+https://zealous-euler-d511eb.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
