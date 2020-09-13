@@ -11,7 +11,7 @@ export class Tarjeta extends React.Component {
   render() {
     return (
       
-      <div className="col-6 align-self-center" align="center">
+      <div className=" align-self-center" align="center">
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" className="bandera" src={this.props.data.flag} />
           <Card.Body>

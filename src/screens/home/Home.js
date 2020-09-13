@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../logo.svg';
 import Header from '../../common/header/Header'
 import './Home.css';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Button,Container } from 'react-bootstrap';
 
 class Home extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class Home extends React.Component {
     const contador = this.state.contador > 0 ? <span>Contador: {this.state.contador}</span> : '';
     const textoBoton = this.state.contador > 0 ? 'Incrementar contador' : 'Cambiar saludo';
     return (
-      <Jumbotron>
+      <Container>
         <h1>Hola, {this.state.saludo}!</h1>
         <p>{contador}</p>
         <p>
@@ -34,7 +34,7 @@ class Home extends React.Component {
         <p>
           <Button variant="primary" onClick={this.cambiarSaludo}>{textoBoton}</Button>
         </p>
-      </Jumbotron>
+      </Container>
     );
   }
 }

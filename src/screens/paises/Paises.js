@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Paises.css';
-import { Button } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
 import { Tarjeta } from './../../common/tarjeta/Tarjeta';
 
 class Paises extends React.Component {
@@ -50,13 +50,13 @@ class Paises extends React.Component {
     if (!this.state.cargando && this.state.totalPaises > 0) {
       return (
         <div className="row">
-          <div className="col-3" align="center">
-            <Tarjeta data={this.state.paisLocal}  />
+          <div className="col-md-4" align="center">
+            <Tarjeta data={this.state.paisLocal} />
           </div>
-          <div className="col-3" align="center">
-            <h1 className="vsText">Vs.</h1>
+          <div className="col-md-4" align="center">
+            <h1 className="vsText">VS.</h1>
           </div>
-          <div className="col-3" align="center">
+          <div className="col-md-4" align="center">
             <Tarjeta data={this.state.paisVisitante} />
           </div>
         </div>
@@ -72,14 +72,16 @@ class Paises extends React.Component {
     const hacerSorteoBoton = this.state.cargando ? 'Cargando...' : <Button onClick={this.hacerSorteo}>Hacer Sorteo</Button>;
     const cuadroDePaises = this.traerCuadroDePaises();
     return (
-      <div className="App">
-        <div className="aboutContainer">
-          {hacerSorteoBoton}
+      <Container>
+        <div className="App">
+          <div className="aboutContainer">
+            {hacerSorteoBoton}
+          </div>
+          <div className="aboutContainer">
+            {cuadroDePaises}
+          </div>
         </div>
-        <div className="aboutContainer">
-          {cuadroDePaises}
-        </div>
-      </div>
+      </Container>
     );
   }
 }
