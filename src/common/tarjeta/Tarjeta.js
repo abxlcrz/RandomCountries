@@ -10,7 +10,7 @@ export class Tarjeta extends React.Component {
 
   render() {
     return (
-      
+
       <div className=" align-self-center" align="center">
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" className="bandera" src={this.props.data.flag} />
@@ -20,8 +20,8 @@ export class Tarjeta extends React.Component {
           </Card.Body>
         </Card>
       </div>
-      
-      
+
+
     );
   }
 }
