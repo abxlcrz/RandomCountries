@@ -74,11 +74,13 @@ class Paises extends React.Component {
     return (
       <Container>
         <div className="App">
-          <div className="aboutContainer">
-            {hacerSorteoBoton}
-          </div>
+
           <div className="aboutContainer">
             {cuadroDePaises}
+          </div>
+
+          <div className="aboutContainer">
+            {hacerSorteoBoton}
           </div>
         </div>
       </Container>
