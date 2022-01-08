@@ -19,7 +19,7 @@ class Paises extends React.Component {
 
   hacerSorteo() {
     this.setState({ cargando: true });
-    fetch('https://restcountries.eu/rest/v2/all')
+    fetch('https://restcountries.com/v2/all')
       .then((response) => {
         return response.json();
       })
