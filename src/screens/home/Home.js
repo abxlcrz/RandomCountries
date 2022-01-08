@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../logo.svg';
-import Header from '../../common/header/Header'
 import './Home.css';
 import { Button, Container } from 'react-bootstrap';
 
