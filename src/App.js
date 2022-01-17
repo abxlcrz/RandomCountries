@@ -1,6 +1,6 @@
-import React from 'react';
-import './App.css';
-import AppRouter from './common/router/AppRouter';
+import React from "react";
+import "./App.css";
+import AppRouter from "./common/router/AppRouter";
 
 class App extends React.Component {
   constructor(props) {
@@ -8,10 +8,8 @@ class App extends React.Component {
     this.state = {};
   }
 
-  render(){
-    return (
-      <AppRouter />
-    );  
+  render() {
+    return <AppRouter />;
   }
 }
 
